@@ -13,11 +13,11 @@ class ApiController extends Controller
 {
     public function get_sprint()
     {
-    	// $sprint = Sprint::all();
-    	// return response()->json($sprint);
+    	$sprint = Sprint::all();
+    	return response()->json($sprint);
         
-        $get_data = array('results' => Sprint::all());
-        return $get_data;
+        // $get_data = array('results' => Sprint::all());
+        // return $get_data;
     }
 
      public function get_logbook_sprint()
