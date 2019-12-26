@@ -93,12 +93,12 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="{{url('/po-review')}}">
+          <a class="nav-link active " href="{{url('/po-review')}}">
             <i class="ni ni-single-02 text-yellow"></i> Penilaian PO
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="{{ url('/hasil')}}">
+          <a class="nav-link active " href="{{ url('/hasil')}}">
             <i class="ni ni-bullet-list-67 text-red"></i> Hasil Review
           </a>
         </li>

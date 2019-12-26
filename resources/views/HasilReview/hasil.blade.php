@@ -39,6 +39,7 @@
 					    <table class="table align-items-center">
 					        <thead class="thead-light">
 					            <tr>
+					            	<th scope="col">Kelompok</th>
 					                <th scope="col"> Judul Sprint</th>
 					                <th scope="col">Task Terselesaikan </th>
 					                <th scope="col">Validasi</th>
@@ -48,6 +49,7 @@
 							<tbody class="list">
 									@foreach($logpro as $lo)
 							            <tr>
+							            	<td> {{ $lo->kelompok }} </td>
 							            	<td>{{ $lo->sprint->nama_sprint }}</td>
 							            	<td>
 							            		<ul>
@@ -58,7 +60,12 @@
 							            	</td>
 							            	<td>
 							            		@foreach($lo->po_review as $rev)
-							            			{{$rev->validasi}}
+							            			
+													@if($rev->validasi == 0)
+														<a href="#" class="btn btn-danger btn-sm" role="button" aria-disabled="true">Tidak</a>
+													@elseif ($rev->validasi == 1)
+														<a href="#" class="btn btn-success btn-sm" role="button" aria-disabled="false">Oke</a>
+													@endif
 							            		@endforeach
 							            	</td>
 							            	<td>
@@ -66,7 +73,6 @@
 							            			{{$rev->rekomendasi}}
 							            		@endforeach
 							            	</td>
-							            	
 					            	@endforeach
 								</tbody>
 					    </table>

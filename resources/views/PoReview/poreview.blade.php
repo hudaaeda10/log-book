@@ -38,6 +38,9 @@
 					    <table class="table align-items-center">
 					        <thead class="thead-light">
 					            <tr>
+					            	<th scope="col">
+					            		Kelompok
+					            	</th>
 					                <th scope="col">
 					                    Judul Sprint
 					                </th>
@@ -56,6 +59,7 @@
 					        <tbody class="list">
 					            @foreach($logpro as $lo)
 					            <tr>
+					            	<td> {{ $lo->kelompok }} </td>
 					            	<td>{{ $lo->sprint->nama_sprint }}</td>
 					            	<td>
 					            		<ul>
@@ -67,7 +71,7 @@
 					            	<td> <a href="{{Storage::url($lo->hasil_log)}}" download>Unduh</a> </td>
 					            	<td> {{ $lo->kendala }} </td>
 					            	<td>
-					            		<button class="btn btn-success btn-sm btn-validasi" data-valid="1" data-projectid="{{$lo->id}}">Oke</button>
+					            		<button class="btn btn-success btn-sm  btn-validasi" data-valid="1" data-projectid="{{$lo->id}}">Oke</button>
 					            		<button class="btn btn-danger btn-sm btn-validasi" data-valid="0" data-projectid="{{$lo->id}}">Tidak</button>
 					            	</td>
 					            </tr>

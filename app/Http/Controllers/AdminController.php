@@ -23,7 +23,6 @@ class AdminController extends Controller
 
     public function store_logbook(Request $request)
     {
-    	
     	$sprint = $request->input('sprint_id');
     	$kendala = $request->input('kendala');
     	$hasil = $request->file;

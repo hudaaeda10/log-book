@@ -24,10 +24,10 @@
             @endforeach
           </select>
           <br><br>
-          <h3>Pilih Kendala Sprint : </h3>
+          <h3>Task Yang Tuntas : </h3>
           {{-- TODO --}}
           <div id="task">
-
+              
           </div>
         </div>
         <br><br>
