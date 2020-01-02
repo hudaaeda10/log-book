@@ -64,6 +64,11 @@ class ApiController extends Controller
     	]);
     }
 
+    public function get_logproject($id) {
+        $logpro = Logproject::with('task')->get();;
+        return response()->json($logpro);
+    }
+
     public function get_review($id)
     {
         $review = Poreview::all();
