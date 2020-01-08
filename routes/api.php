@@ -14,10 +14,10 @@ use Illuminate\Http\Request;
 */
 
 Route::get('/log-book', 'Api\ApiController@get_sprint');
-Route::post('/store-logbook', 'Api\ApiController@store_logbook');
 Route::get('/get-task/{id_sprint}', 'Api\ApiController@get_task');
 Route::get('/get-logbook-sprint', 'Api\ApiController@get_logbook_sprint');
 
+Route::post('/store-logbook', 'Api\ApiController@store_logbook');
 Route::get('/logproject', 'Api\ApiController@get_logproject');
 
 Route::get('/po-review/', 'Api\ApiController@get_review');
