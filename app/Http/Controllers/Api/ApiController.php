@@ -65,7 +65,7 @@ class ApiController extends Controller
     }
 
     public function get_logproject() {
-        $logpro = Logproject::with('task')->get();
+        $logpro = Logproject::get();
         return response()->json($logpro);
     }
 
