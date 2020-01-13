@@ -22,5 +22,5 @@ Route::get('/get-logbook-sprint', 'Api\ApiController@get_logbook_sprint');
 Route::post('/store-logbook', 'Api\ApiController@store_logbook');
 Route::get('/logproject', 'Api\ApiController@get_logproject');
 
-Route::get('/po-review/', 'Api\ApiController@get_review');
+Route::get('/po-review', 'Api\ApiController@get_review');
 Route::post('/po-review', 'Api\ApiController@store_review');
