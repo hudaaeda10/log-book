@@ -14,7 +14,7 @@ use Illuminate\Http\Request;
 */
 
 Route::get('/log-book', 'Api\ApiController@get_sprint');
-Route::get('/log-book/{id}', 'Api\ApiController@get_sprint_by_id');
+Route::get('/log-book/{sprint}', 'Api\ApiController@get_sprint_by_id');
 
 Route::get('/get-task/{id_sprint}', 'Api\ApiController@get_task');
 Route::get('/get-logbook-sprint', 'Api\ApiController@get_logbook_sprint');
