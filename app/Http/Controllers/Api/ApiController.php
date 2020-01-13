@@ -20,6 +20,11 @@ class ApiController extends Controller
         // return $get_data;
     }
 
+    public function get_sprint_by_id(Sprint $sprint)
+    {
+        return $sprint;
+    }
+
      public function get_logbook_sprint()
     {
         $sprint = DB::table('sprint')
